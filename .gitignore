@@ -1,0 +1,22 @@
+# Created by https://www.toptal.com/developers/gitignore/api/hexo
+# Edit at https://www.toptal.com/developers/gitignore?templates=hexo
+
+### Hexo ###
+.DS_Store
+Thumbs.db
+db.json
+*.log
+node_modules/
+public/
+.deploy*/
+_multiconfig.yml
+node_modules/
+public/
+
+##ignored the default themes
+##/themes/landscape/
+
+# Runtime data
+*.lock
+
+# End of https://www.toptal.com/developers/gitignore/api/hexo
