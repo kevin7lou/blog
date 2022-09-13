@@ -1,0 +1,88 @@
+name: Hexo-Build-Deploy
+
+# 只监听 master 分支的改动
+on:
+  push:
+    branches:
+      - master          # default branch
+
+# 自定义环境变量
+env:
+  # POST_ASSET_IMAGE_CDN: true
+  TZ: Asia/Shanghai
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 检出代码，设置 Node 环境，获取博客源码和主题
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      # 这里用的是 Node.js 18.x
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '18'
+
+      # # - name: Checkout theme repo
+      # #   uses: actions/checkout@v2
+      # #   with:
+      # #     repository: git@github.com:theme-next/hexo-theme-next.git
+      # #     ref: master
+      # #     path: themes/next
+      # # 同步子模块。如果没有使用子模块的话，这一步可以忽略。
+      # - name: Checkout submodules
+      #   run: |
+      #     auth_header="$(git config --local --get http.https://github.com/.extraheader)"
+      #     git submodule sync --recursive
+      #     git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1    
+
+
+
+      # # 设置 yarn 缓存，npm 的话可以看 actions/cache@v2 的文档示例
+      # - name: Get yarn cache directory path
+      #   id: yarn-cache-dir-path
+      #   run: echo "::set-output name=dir::$(yarn cache dir)"
+
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-npm-cache
+          restore-keys: |
+            ${{ runner.OS }}-npm-cache
+
+      # 安装依赖
+      - name: Install dependencies
+        run: |
+          npm install --save
+      
+      - name: Build
+        run: npm run build
+      
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+
+      # # 从之前设置的 secret 获取部署私钥
+      # - name: Set up environment
+      #   env:
+      #     DEPLOY_KEY: ${{ secrets.DEPLOY_HEXO_PRI }}
+      #   run: |
+      #     sudo timedatectl set-timezone "Asia/Shanghai"
+      #     mkdir -p ~/.ssh
+      #     echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+      #     chmod 600 ~/.ssh/id_rsa
+      #     ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+      # # 生成并部署
+      # - name: Deploy
+      #   run: |
+      #     npx hexo deploy --generate
