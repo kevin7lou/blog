@@ -36,13 +36,13 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+# scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 #scheme: Gemini
 
 # Dark Mode
-darkmode: false
+darkmode: true
 
 
 # ---------------------------------------------------------------
@@ -66,8 +66,8 @@ creative_commons:
   license: by-nc-sa
   # Available values: big | small
   size: small
-  sidebar: false
-  post: false
+  sidebar: true
+  post: true
   # You can set a language value if you prefer a translated version of CC license, e.g. deed.zh
   # CC licenses are available in 39 languages, you can find the specific and correct abbreviation you need on https://creativecommons.org
   language:
@@ -95,11 +95,12 @@ open_graph:
 # Value before `||` delimiter is the target link, value after `||` delimiter is the name of Font Awesome icon.
 # External url should start with http:// or https://
 menu:
-  #home: / || fa fa-home
-  #about: /about/ || fa fa-user
-  #tags: /tags/ || fa fa-tags
-  #categories: /categories/ || fa fa-th
-  #archives: /archives/ || fa fa-archive
+  home: / || fa fa-home
+  about: /about/ || fa fa-user
+  tags: /tags/ || fa fa-tags
+  categories: /categories/ || fa fa-th
+  archives: /archives/ || fa fa-archive
+  Wiki: /wiki/ || fab fa-wikipedia-w
   #schedule: /schedule/ || fa fa-calendar
   #sitemap: /sitemap.xml || fa fa-sitemap
   #commonweal: /404/ || fa fa-heartbeat
@@ -107,7 +108,7 @@ menu:
 # Enable / Disable menu icons / item badges.
 menu_settings:
   icons: true
-  badges: false
+  badges: true
 
 
 # ---------------------------------------------------------------
@@ -117,8 +118,8 @@ menu_settings:
 
 sidebar:
   # Sidebar Position.
-  position: left
-  #position: right
+  # position: left
+  position: right
 
   # Manual define the sidebar width. If commented, will be default for:
   # Muse | Mist: 320
@@ -140,9 +141,9 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: #/images/avatar.gif
+  url: /images/avatar.gif
   # If true, the avatar will be displayed in circle.
-  rounded: false
+  rounded: true
   # If true, the avatar will be rotated with the cursor.
   rotated: false
 
@@ -154,7 +155,12 @@ site_state: true
 # Key is the link label showing to end users.
 # Value before `||` delimiter is the target permalink, value after `||` delimiter is the name of Font Awesome icon.
 social:
-  #GitHub: https://github.com/yourname || fab fa-github
+  GitHub: https://github.com/kevin7lou || fab fa-github
+  知乎: https://www.zhihu.com/people/emmaus3 || fab fa-zhihu
+  语雀:  https://www.yuque.com/kevin7lou/fwny8c || fas fa-feather-alt
+  #LinkedIn: https://github.com/yourname || fab fa-linkedin
+  bilibili: https://space.bilibili.com/2557989 || fab fa-youtube
+  RSS: /atom.xml || fa fa-rss
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   #Google: https://plus.google.com/yourname || fab fa-google
@@ -167,7 +173,7 @@ social:
 
 social_icons:
   enable: true
-  icons_only: false
+  icons_only: true
   transition: false
 
 # Blog rolls
@@ -187,7 +193,7 @@ toc:
   # Automatically add list number to toc.
   number: true
   # If true, all words will placed on next lines if header width longer then sidebar width.
-  wrap: false
+  wrap: true
   # If true, all level of TOC in a post will be displayed, rather than the activated part of it.
   expand_all: false
   # Maximum heading depth of generated toc.
@@ -261,34 +267,34 @@ symbols_count_time:
   item_text_total: false
 
 # Use icon instead of the symbol # to indicate the tag at the bottom of the post
-tag_icon: false
+tag_icon: true
 
 # Donate (Sponsor) settings
 # Front-matter variable (nonsupport animation).
 reward_settings:
   # If true, a donate button will be displayed in every article by default.
-  enable: false
+  enable: true
   animation: false
   #comment: Buy me a coffee
 
 reward:
-  #wechatpay: /images/wechatpay.png
-  #alipay: /images/alipay.png
-  #paypal: /images/paypal.png
-  #bitcoin: /images/bitcoin.png
+  wechatpay: /images/wechatpay.png
+  alipay: /images/alipay.png
+  paypal: /images/paypal.png
+  bitcoin: /images/bitcoin.png
 
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
-  #Twitter: https://twitter.com/username || fab fa-twitter
-  #Telegram: https://t.me/channel_name || fab fa-telegram
-  #WeChat: /images/wechat_channel.jpg || fab fa-weixin
-  #RSS: /atom.xml || fa fa-rss
+  Twitter: https://twitter.com/username || fab fa-twitter
+  Telegram: https://t.me/channel_name || fab fa-telegram
+  WeChat: /images/wechat_channel.jpg || fab fa-weixin
+  RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
 # Dependencies: https://github.com/sergeyzwezdin/hexo-related-posts
 related_posts:
-  enable: false
+  enable: true
   title: # Custom header, leave empty to use the default one
   display_in_home: false
 
@@ -372,7 +378,7 @@ codeblock:
     dark: prism-dark
   # Add copy button on codeblock
   copy_button:
-    enable: false
+    enable: true
     # Available values: default | flat | mac
     style:
 
@@ -385,7 +391,7 @@ back2top:
 
 # Reading progress bar
 reading_progress:
-  enable: false
+  enable: true
   # Available values: left | right
   start_at: left
   # Available values: top | bottom
@@ -406,7 +412,7 @@ bookmark:
 # `Follow me on GitHub` banner in the top-right corner.
 github_banner:
   enable: false
-  permalink: https://github.com/yourname
+  permalink: https://github.com/kevin7lou
   title: Follow me on GitHub
 
 
@@ -469,16 +475,16 @@ font:
 
 # If true, site-subtitle will be added to index page.
 # Remember to set up your site-subtitle in Hexo `_config.yml` (e.g. subtitle: Subtitle)
-index_with_subtitle: false
+index_with_subtitle: true
 
 # Automatically add external URL with Base64 encrypt & decrypt.
-exturl: false
+exturl: true
 # If true, an icon will be attached to each external URL
 exturl_icon: true
 
 # Google Webmaster tools verification.
 # See: https://developers.google.com/search
-google_site_verification:
+google_site_verification: uKuWVhKqZwEufCjkmJ75A7eiCwdkY6DhTsH_OnEtYBk
 
 # Bing Webmaster tools verification.
 # See: https://www.bing.com/webmasters
@@ -490,7 +496,7 @@ yandex_site_verification:
 
 # Baidu Webmaster tools verification.
 # See: https://ziyuan.baidu.com/site
-baidu_site_verification:
+baidu_site_verification: sq1edMb0bN
 
 
 # ---------------------------------------------------------------
@@ -508,7 +514,7 @@ math:
   # Default (false) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in front-matter.
   # If you set it to true, it will load mathjax / katex script EVERY PAGE.
-  every_page: false
+  every_page: true
 
   mathjax:
     enable: false
@@ -516,9 +522,9 @@ math:
     tags: none
 
   katex:
-    enable: false
+    enable: true
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
-    copy_tex: false
+    copy_tex: true
 
 # Easily enable fast Ajax navigation on your website.
 # For more information: https://github.com/next-theme/pjax
@@ -526,7 +532,7 @@ pjax: false
 
 # FancyBox is a tool that offers a nice and elegant way to add zooming functionality for images.
 # For more information: https://fancyapps.com/fancybox/
-fancybox: false
+fancybox: true
 
 # A JavaScript library for zooming images like Medium.
 # Warning: Do not enable both `fancybox` and `mediumzoom`.
@@ -725,7 +731,7 @@ firestore:
 # Show Views / Visitors of the website / page with busuanzi.
 # For more information: http://ibruce.info/2015/04/04/busuanzi/
 busuanzi_count:
-  enable: false
+  enable: true
   total_visitors: true
   total_visitors_icon: fa fa-user
   total_views: true
@@ -749,7 +755,7 @@ algolia_search:
 # Local Search
 # Dependencies: https://github.com/next-theme/hexo-generator-searchdb
 local_search:
-  enable: false
+  enable: true
   # If auto, trigger search by changing input.
   # If manual, trigger search by pressing enter key or search button.
   trigger: auto
@@ -808,8 +814,8 @@ note:
   #  - modern    bootstrap callout new (v2-v3) alert style.
   #  - flat      flat callout style with background, like on Mozilla or StackOverflow.
   #  - disabled  disable all CSS styles import of note tag.
-  style: simple
-  icons: false
+  style: flat
+  icons: true
   # Offset lighter of background in % for modern and flat styles (modern: -12 | 12; flat: -18 | 6).
   # Offset also applied to label tag variables. This option can work with disabled note tag.
   light_bg_offset: 0
