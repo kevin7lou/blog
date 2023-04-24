@@ -4,7 +4,8 @@
     <title>hahah</title>
     <url>/2018/11/04/hahah/</url>
     <content><![CDATA[<p>sfsf</p>
-<h1 id="sfasdf"><a href="#sfasdf" class="headerlink" title="sfasdf"></a>sfasdf</h1>]]></content>
+<h1 id="sfasdf"><a href="#sfasdf" class="headerlink" title="sfasdf"></a>sfasdf</h1><p>sdfsdfgdfger</p>
+]]></content>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -28,7 +29,7 @@
     <title>这是我的第一篇博客</title>
     <url>/2018/04/15/my-1st-post/</url>
     <content><![CDATA[<p>title: my new post #可以改成中文的，如“新文章”<br>date: 2016-02-21 16:04:09 #发表日期，一般不改动<br>categories: blog #文章文类<br>tags: [文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog</p>
-<p>#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上</p>
+<p>#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上 add</p>
 <span id="more"></span>，在<!--more-->之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more才能看到。]]></content>
       <tags>
         <tag>tag1</tag>

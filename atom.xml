@@ -6,7 +6,7 @@
   <link href="https://kevin7lou.github.io/atom.xml" rel="self"/>
   
   <link href="https://kevin7lou.github.io/"/>
-  <updated>2023-04-22T08:15:35.743Z</updated>
+  <updated>2023-04-24T14:25:05.807Z</updated>
   <id>https://kevin7lou.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://kevin7lou.github.io/2022/09/14/hello-world/"/>
     <id>https://kevin7lou.github.io/2022/09/14/hello-world/</id>
     <published>2022-09-13T17:33:17.000Z</published>
-    <updated>2023-04-22T08:15:35.743Z</updated>
+    <updated>2023-04-24T14:25:05.807Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
     
@@ -41,15 +41,16 @@
     <link href="https://kevin7lou.github.io/2018/11/04/hahah/"/>
     <id>https://kevin7lou.github.io/2018/11/04/hahah/</id>
     <published>2018-11-03T16:13:42.000Z</published>
-    <updated>2023-04-22T08:15:35.743Z</updated>
+    <updated>2023-04-24T14:25:05.807Z</updated>
     
-    <content type="html"><![CDATA[<p>sfsf</p><h1 id="sfasdf"><a href="#sfasdf" class="headerlink" title="sfasdf"></a>sfasdf</h1>]]></content>
+    <content type="html"><![CDATA[<p>sfsf</p><h1 id="sfasdf"><a href="#sfasdf" class="headerlink" title="sfasdf"></a>sfasdf</h1><p>sdfsdfgdfger</p>]]></content>
     
     
       
       
     <summary type="html">&lt;p&gt;sfsf&lt;/p&gt;
-&lt;h1 id=&quot;sfasdf&quot;&gt;&lt;a href=&quot;#sfasdf&quot; class=&quot;headerlink&quot; title=&quot;sfasdf&quot;&gt;&lt;/a&gt;sfasdf&lt;/h1&gt;</summary>
+&lt;h1 id=&quot;sfasdf&quot;&gt;&lt;a href=&quot;#sfasdf&quot; class=&quot;headerlink&quot; title=&quot;sfasdf&quot;&gt;&lt;/a&gt;sfasdf&lt;/h1&gt;&lt;p&gt;sdfsdfgdfger&lt;/p&gt;
+</summary>
       
     
     
@@ -62,7 +63,7 @@
     <link href="https://kevin7lou.github.io/2018/10/24/test1/"/>
     <id>https://kevin7lou.github.io/2018/10/24/test1/</id>
     <published>2018-10-24T13:07:12.000Z</published>
-    <updated>2023-04-22T08:15:35.743Z</updated>
+    <updated>2023-04-24T14:25:05.807Z</updated>
     
     <content type="html"><![CDATA[<p>测试发布</p>]]></content>
     
@@ -85,13 +86,13 @@
     <link href="https://kevin7lou.github.io/2018/04/15/my-1st-post/"/>
     <id>https://kevin7lou.github.io/2018/04/15/my-1st-post/</id>
     <published>2018-04-15T08:43:56.000Z</published>
-    <updated>2023-04-22T08:15:35.743Z</updated>
+    <updated>2023-04-24T14:25:05.807Z</updated>
     
-    <content type="html"><![CDATA[<p>title: my new post #可以改成中文的，如“新文章”<br>date: 2016-02-21 16:04:09 #发表日期，一般不改动<br>categories: blog #文章文类<br>tags: [文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog</p><p>#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上</p><span id="more"></span>，在<!--more-->之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more才能看到。]]></content>
+    <content type="html"><![CDATA[<p>title: my new post #可以改成中文的，如“新文章”<br>date: 2016-02-21 16:04:09 #发表日期，一般不改动<br>categories: blog #文章文类<br>tags: [文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog</p><p>#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上 add</p><span id="more"></span>，在<!--more-->之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more才能看到。]]></content>
     
     
     <summary type="html">&lt;p&gt;title: my new post #可以改成中文的，如“新文章”&lt;br&gt;date: 2016-02-21 16:04:09 #发表日期，一般不改动&lt;br&gt;categories: blog #文章文类&lt;br&gt;tags: [文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog&lt;/p&gt;
-&lt;p&gt;#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上&lt;/p&gt;</summary>
+&lt;p&gt;#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上 add&lt;/p&gt;</summary>
     
     
     
