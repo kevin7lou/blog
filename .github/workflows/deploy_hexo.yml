@@ -1,4 +1,4 @@
-name: Hexo-Build-Deploy
+name: Hexo-Build-Deploy-Blog
 
 # 只监听 master 分支的改动
 on:
@@ -27,26 +27,6 @@ jobs:
         with:
           node-version: '16.x'
 
-      # # - name: Checkout theme repo
-      # #   uses: actions/checkout@v2
-      # #   with:
-      # #     repository: git@github.com:theme-next/hexo-theme-next.git
-      # #     ref: master
-      # #     path: themes/next
-      # # 同步子模块。如果没有使用子模块的话，这一步可以忽略。
-      # - name: Checkout submodules
-      #   run: |
-      #     auth_header="$(git config --local --get http.https://github.com/.extraheader)"
-      #     git submodule sync --recursive
-      #     git -c "http.extraheader=$auth_header" -c protocol.version=2 submodule update --init --force --recursive --depth=1    
-
-
-
-      # # 设置 yarn 缓存，npm 的话可以看 actions/cache@v2 的文档示例
-      # - name: Get yarn cache directory path
-      #   id: yarn-cache-dir-path
-      #   run: echo "::set-output name=dir::$(yarn cache dir)"
-
     # Cache npm modules
     # To speed up the workflow by reusing the cached modules instead of reinstalling them every time.
       - name: Cache Dependencies
@@ -71,24 +51,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
-
-# The code you provided is for setting up a private key and using it to deploy the site. However, since you are deploying your Hexo site to GitHub Pages, you don't need to use a private key for authentication. Instead, you can use the GITHUB_TOKEN secret provided by GitHub Actions to authenticate with GitHub.
-
-# Therefore, you don't need to add these lines:
-
-#       # 从之前设置的 secret 获取部署私钥
-#       - name: Set up environment
-#         env:
-#           DEPLOY_KEY: ${{ secrets.DEPLOY_HEXO_PRI }}
-#         run: |
-#           sudo timedatectl set-timezone "Asia/Shanghai"
-#           mkdir -p ~/.ssh
-#           echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
-#           chmod 600 ~/.ssh/id_rsa
-#           ssh-keyscan github.com >> ~/.ssh/known_hosts
-
-#       # 生成并部署
-#       - name: Deploy
-#         run: |
-#           npx hexo deploy --generate
-# Instead, you can use the peaceiris/actions-gh-pages action to deploy your site to GitHub Pages using the GITHUB_TOKEN secret like this:
