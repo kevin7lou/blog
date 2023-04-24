@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://kevin7lou.github.io/2018/11/04/hahah/</loc>
+    <loc>https://kevin7lou.github.io/2023/04/24/AGI-era/</loc>
     
     <lastmod>2023-04-24</lastmod>
     
@@ -11,25 +11,7 @@
   </url>
   
   <url>
-    <loc>https://kevin7lou.github.io/2022/09/14/hello-world/</loc>
-    
-    <lastmod>2023-04-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kevin7lou.github.io/2018/04/15/my-1st-post/</loc>
-    
-    <lastmod>2023-04-24</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kevin7lou.github.io/2018/10/24/test1/</loc>
+    <loc>https://kevin7lou.github.io/2022/09/14/my-1st-post/</loc>
     
     <lastmod>2023-04-24</lastmod>
     
@@ -73,20 +55,13 @@
   </url>
 
   
-  <url>
-    <loc>https://kevin7lou.github.io/tags/tag1/</loc>
-    <lastmod>2023-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://kevin7lou.github.io/tags/tag2/</loc>
-    <lastmod>2023-04-24</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
+  
+  <url>
+    <loc>https://kevin7lou.github.io/categories/diary/</loc>
+    <lastmod>2023-04-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
   
 </urlset>

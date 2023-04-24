@@ -1,10 +1,7 @@
-https://kevin7lou.github.io/2018/11/04/hahah/
-https://kevin7lou.github.io/2022/09/14/hello-world/
-https://kevin7lou.github.io/2018/04/15/my-1st-post/
-https://kevin7lou.github.io/2018/10/24/test1/
+https://kevin7lou.github.io/2023/04/24/AGI-era/
+https://kevin7lou.github.io/2022/09/14/my-1st-post/
 https://kevin7lou.github.io/about/index.html
 https://kevin7lou.github.io/categories/index.html
 https://kevin7lou.github.io/tags/index.html
 https://kevin7lou.github.io/
-https://kevin7lou.github.io/tags/tag1/
-https://kevin7lou.github.io/tags/tag2/
+https://kevin7lou.github.io/categories/diary/

@@ -6,7 +6,7 @@
   <link href="https://kevin7lou.github.io/atom.xml" rel="self"/>
   
   <link href="https://kevin7lou.github.io/"/>
-  <updated>2023-04-24T14:25:05.807Z</updated>
+  <updated>2023-04-24T15:14:24.313Z</updated>
   <id>https://kevin7lou.github.io/</id>
   
   <author>
@@ -17,87 +17,44 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://kevin7lou.github.io/2022/09/14/hello-world/"/>
-    <id>https://kevin7lou.github.io/2022/09/14/hello-world/</id>
-    <published>2022-09-13T17:33:17.000Z</published>
-    <updated>2023-04-24T14:25:05.807Z</updated>
+    <title>AGI Era</title>
+    <link href="https://kevin7lou.github.io/2023/04/24/AGI-era/"/>
+    <id>https://kevin7lou.github.io/2023/04/24/AGI-era/</id>
+    <published>2023-04-24T13:32:17.000Z</published>
+    <updated>2023-04-24T15:14:24.313Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9oZXhvLmlvLw==&quot;&gt;Hexo&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;! This is your very</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>hahah</title>
-    <link href="https://kevin7lou.github.io/2018/11/04/hahah/"/>
-    <id>https://kevin7lou.github.io/2018/11/04/hahah/</id>
-    <published>2018-11-03T16:13:42.000Z</published>
-    <updated>2023-04-24T14:25:05.807Z</updated>
-    
-    <content type="html"><![CDATA[<p>sfsf</p><h1 id="sfasdf"><a href="#sfasdf" class="headerlink" title="sfasdf"></a>sfasdf</h1><p>sdfsdfgdfger</p>]]></content>
+    <content type="html"><![CDATA[<p>去年年底了解到AIGC这个概念，大为震撼！经过这半年的技术演进，很明显，这个赛道已经充斥着各种各样的创业者们（也不乏从币圈和Web3窜来的骗子们🤥）。</p><p>那么，面对这么艰深的知识，我应该怎么做呢？</p>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;sfsf&lt;/p&gt;
-&lt;h1 id=&quot;sfasdf&quot;&gt;&lt;a href=&quot;#sfasdf&quot; class=&quot;headerlink&quot; title=&quot;sfasdf&quot;&gt;&lt;/a&gt;sfasdf&lt;/h1&gt;&lt;p&gt;sdfsdfgdfger&lt;/p&gt;
+    <summary type="html">&lt;p&gt;去年年底了解到AIGC这个概念，大为震撼！经过这半年的技术演进，很明显，这个赛道已经充斥着各种各样的创业者们（也不乏从币圈和Web3窜来的骗子们🤥）。&lt;/p&gt;
+&lt;p&gt;那么，面对这么艰深的知识，我应该怎么做呢？&lt;/p&gt;
 </summary>
       
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>test1</title>
-    <link href="https://kevin7lou.github.io/2018/10/24/test1/"/>
-    <id>https://kevin7lou.github.io/2018/10/24/test1/</id>
-    <published>2018-10-24T13:07:12.000Z</published>
-    <updated>2023-04-24T14:25:05.807Z</updated>
-    
-    <content type="html"><![CDATA[<p>测试发布</p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;测试发布&lt;/p&gt;
-</summary>
-      
-    
-    
-    
-    
-    <category term="tag2" scheme="https://kevin7lou.github.io/tags/tag2/"/>
     
   </entry>
   
   <entry>
     <title>这是我的第一篇博客</title>
-    <link href="https://kevin7lou.github.io/2018/04/15/my-1st-post/"/>
-    <id>https://kevin7lou.github.io/2018/04/15/my-1st-post/</id>
-    <published>2018-04-15T08:43:56.000Z</published>
-    <updated>2023-04-24T14:25:05.807Z</updated>
+    <link href="https://kevin7lou.github.io/2022/09/14/my-1st-post/"/>
+    <id>https://kevin7lou.github.io/2022/09/14/my-1st-post/</id>
+    <published>2022-09-13T17:33:17.000Z</published>
+    <updated>2023-04-24T15:14:24.313Z</updated>
     
-    <content type="html"><![CDATA[<p>title: my new post #可以改成中文的，如“新文章”<br>date: 2016-02-21 16:04:09 #发表日期，一般不改动<br>categories: blog #文章文类<br>tags: [文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog</p><p>#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上 add</p><span id="more"></span>，在<!--more-->之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more才能看到。]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;title: my new post #可以改成中文的，如“新文章”&lt;br&gt;date: 2016-02-21 16:04:09 #发表日期，一般不改动&lt;br&gt;categories: blog #文章文类&lt;br&gt;tags: [文章] #文章标签，多于一项时用这种格式，只有一项时使用tags: blog&lt;/p&gt;
-&lt;p&gt;#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上 add&lt;/p&gt;</summary>
+    <content type="html"><![CDATA[<h1 id="重拾“折腾之旅”"><a href="#重拾“折腾之旅”" class="headerlink" title="重拾“折腾之旅”"></a>重拾“折腾之旅”</h1><p>经历了10x年前的博客大巴、新浪博客、WordPress……如今，重新开始折腾之旅，现在流行Static Blog。在众多框架中，我选择了<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>以及优雅极简的<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy8=">Next<i class="fa fa-external-link-alt"></i></span>主题。</p><p>经过反反复复重装和配置，也伴随着开源框架的不断升级，现在上手的成本越来越低，而且在线教程、生态已经做的很好了。希望这次专注在写作上，不要再折腾了。</p><span id="more"></span><h1 id="为什么在这里"><a href="#为什么在这里" class="headerlink" title="为什么在这里"></a>为什么在这里</h1><p>一开始想要在这世上留下点什么。</p><p>但在后来工作中越法觉得，思考深度和写作能力是相辅相成的。「以写代思」逐渐融入我的习惯中。从不写，到写notes，到在这里码字✍️，始终在成长和迭代。</p><p>此后，有人开始倡导「Learn in Public」，可能这也是开源文化的一种继承吧，所谓「教学相长」更是促使我不断地学习新知识。</p><p>这些年，能走到这里，可能靠着这种持续的学习能力，以及时刻Refresh的精神。希望这些，能对看见此文的您，有所鼓励和帮助。</p><h1 id="内容方向"><a href="#内容方向" class="headerlink" title="内容方向"></a>内容方向</h1><p>首先，构建自我认知体系是个系统工程，需要反复迭代才能螺旋上升。所以，常规知识以链接和笔记形式会记录在我的<a href="https://kevin7lou.github.io/wiki/">Wiki</a>中。</p><p>其次，积累到一定阶段，能够产出长文后，或者是LogSeq不适合的非碎片化内容，我会在这里沉淀。</p><p>简而言之，内容以工作和生活中的知识和思考为主吧，希望能对自己有交待，对您有帮助。😊</p>]]></content>
     
     
+    <summary type="html">&lt;h1 id=&quot;重拾“折腾之旅”&quot;&gt;&lt;a href=&quot;#重拾“折腾之旅”&quot; class=&quot;headerlink&quot; title=&quot;重拾“折腾之旅”&quot;&gt;&lt;/a&gt;重拾“折腾之旅”&lt;/h1&gt;&lt;p&gt;经历了10x年前的博客大巴、新浪博客、WordPress……如今，重新开始折腾之旅，现在流行Static Blog。在众多框架中，我选择了&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9oZXhvLmlvLw==&quot;&gt;Hexo&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;以及优雅极简的&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy8=&quot;&gt;Next&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;主题。&lt;/p&gt;
+&lt;p&gt;经过反反复复重装和配置，也伴随着开源框架的不断升级，现在上手的成本越来越低，而且在线教程、生态已经做的很好了。希望这次专注在写作上，不要再折腾了。&lt;/p&gt;</summary>
     
     
-    <category term="tag1" scheme="https://kevin7lou.github.io/tags/tag1/"/>
+    
+    <category term="朝花夕拾" scheme="https://kevin7lou.github.io/categories/diary/"/>
+    
     
   </entry>
   
