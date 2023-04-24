@@ -157,8 +157,10 @@ site_state: true
 social:
   GitHub: https://github.com/kevin7lou || fab fa-github
   Twitter: https://twitter.com/kevin7lou || fab fa-twitter
+  即刻: https://okjk.co/sCWqF2 || fab fa-square-j
   知乎: https://www.zhihu.com/people/kevin7lou || fab fa-zhihu
   RSS: /atom.xml || fa fa-rss
+
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
   
