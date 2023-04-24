@@ -1,7 +1,7 @@
 # 📜 blog
 
-[![pages-build-deployment](https://github.com/kevin7lou/kevin7lou.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kevin7lou/kevin7lou.github.io/actions/workflows/pages/pages-build-deployment)
 [![Hexo-Build-Deploy](https://github.com/kevin7lou/kevin7lou.github.io/actions/workflows/deploy_hexo.yml/badge.svg)](https://github.com/kevin7lou/kevin7lou.github.io/actions/workflows/deploy_hexo.yml)
+[![pages-build-deployment](https://github.com/kevin7lou/kevin7lou.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/kevin7lou/kevin7lou.github.io/actions/workflows/pages/pages-build-deployment)
 
 Source Code  of My Personal Blog
 - Powered by [Hexo](https://github.com/hexojs/hexo)
