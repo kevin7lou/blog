@@ -4,30 +4,28 @@ name: Hexo-Build-Deploy
 on:
   push:
     branches:
-      - master          # default branch
+      - master      # change this to the name of your branch
 
 # 自定义环境变量
 env:
-  # POST_ASSET_IMAGE_CDN: true
   TZ: Asia/Shanghai
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-latest  # specifies the operating system to run the job on
 
     steps:
-      # 检出代码，设置 Node 环境，获取博客源码和主题
-      - name: Checkout
+      # Checkout the repository code including submodules
+      - name: Checkout Code 🛎️
         uses: actions/checkout@v2
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: 'recursive'   # Fetch Hugo themes (true OR recursive)
 
-      # 这里用的是 Node.js 18.x
+      # Use Node.js 16.x
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-          node-version: '18'
+          node-version: '16.x'
 
       # # - name: Checkout theme repo
       # #   uses: actions/checkout@v2
@@ -49,40 +47,48 @@ jobs:
       #   id: yarn-cache-dir-path
       #   run: echo "::set-output name=dir::$(yarn cache dir)"
 
-      - name: Cache NPM dependencies
+    # Cache npm modules
+    # To speed up the workflow by reusing the cached modules instead of reinstalling them every time.
+      - name: Cache Dependencies
         uses: actions/cache@v2
         with:
-          path: node_modules
-          key: ${{ runner.OS }}-npm-cache
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
-            ${{ runner.OS }}-npm-cache
+            ${{ runner.os }}-node-
 
-      # 安装依赖
-      - name: Install dependencies
-        run: |
-          npm install --save
+      # Install dependencies
+      - name: Install Dependencies
+        run: npm install
       
+      # Build the site
       - name: Build
         run: npm run build
       
+      # Deploy to GitHub Pages using peaceiris/actions-gh-pages
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 
-      # # 从之前设置的 secret 获取部署私钥
-      # - name: Set up environment
-      #   env:
-      #     DEPLOY_KEY: ${{ secrets.DEPLOY_HEXO_PRI }}
-      #   run: |
-      #     sudo timedatectl set-timezone "Asia/Shanghai"
-      #     mkdir -p ~/.ssh
-      #     echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
-      #     chmod 600 ~/.ssh/id_rsa
-      #     ssh-keyscan github.com >> ~/.ssh/known_hosts
+# The code you provided is for setting up a private key and using it to deploy the site. However, since you are deploying your Hexo site to GitHub Pages, you don't need to use a private key for authentication. Instead, you can use the GITHUB_TOKEN secret provided by GitHub Actions to authenticate with GitHub.
 
-      # # 生成并部署
-      # - name: Deploy
-      #   run: |
-      #     npx hexo deploy --generate
+# Therefore, you don't need to add these lines:
+
+#       # 从之前设置的 secret 获取部署私钥
+#       - name: Set up environment
+#         env:
+#           DEPLOY_KEY: ${{ secrets.DEPLOY_HEXO_PRI }}
+#         run: |
+#           sudo timedatectl set-timezone "Asia/Shanghai"
+#           mkdir -p ~/.ssh
+#           echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+#           chmod 600 ~/.ssh/id_rsa
+#           ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+#       # 生成并部署
+#       - name: Deploy
+#         run: |
+#           npx hexo deploy --generate
+# Instead, you can use the peaceiris/actions-gh-pages action to deploy your site to GitHub Pages using the GITHUB_TOKEN secret like this:
