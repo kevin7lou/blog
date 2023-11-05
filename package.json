@@ -12,8 +12,8 @@
     "version": "6.3.0"
   },
   "dependencies": {
-    "acorn": "^8.10.0",
-    "hexo": "^6.3.0",
+    "acorn": "^8.11.2",
+    "hexo": "^7.0.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
@@ -27,7 +27,7 @@
     "hexo-renderer-stylus": "^3.0.0",
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0",
-    "hexo-theme-next": "^8.15.1",
+    "hexo-theme-next": "^8.18.2",
     "hexo-wordcount": "^6.0.1",
     "next-themes": "^0.2.1"
   }
