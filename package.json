@@ -29,6 +29,6 @@
     "hexo-theme-landscape": "^1.0.0",
     "hexo-theme-next": "^8.19.1",
     "hexo-wordcount": "^6.0.1",
-    "next-themes": "^0.2.1"
+    "next-themes": "^0.3.0"
   }
 }
