@@ -30,4 +30,4 @@ tags: AGI
 - 最成功的社区 github
 - i.e., logseq, ETH, Stability AI（社区平台，每个社区独立且垂直的方向）
 - 通过discord+API这种方式，更好链接用户，迭代产品，提升用户粘性
-    - 共享、共建、共治
+    - 共享、共建、共治。
