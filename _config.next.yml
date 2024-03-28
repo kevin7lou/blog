@@ -163,7 +163,6 @@ social:
 
   #E-Mail: mailto:yourname@gmail.com || fa fa-envelope
   #Weibo: https://weibo.com/yourname || fab fa-weibo
-  
   #FB Page: https://www.facebook.com/yourname || fab fa-facebook
   #StackOverflow: https://stackoverflow.com/yourname || fab fa-stack-overflow
   #YouTube: https://youtube.com/yourname || fab fa-youtube
@@ -254,8 +253,8 @@ post_meta:
   item_text: true
   created_at: true
   updated_at:
-    enable: true
-    another_day: false
+    enable: false
+    another_day: true
   categories: true
 
 # Post wordcount display settings
@@ -273,6 +272,7 @@ reward_settings:
   # If true, a donate button will be displayed in every article by default.
   enable: true
   animation: false
+  comment: ☕ Buy me a coffee
 
 reward:
   wechatpay: /images/wechatpay.png
@@ -369,9 +369,9 @@ codeblock:
   theme:
     enable: true
     light: stackoverflow-light
-    dark: base16/darcula
+    dark: atom-one-dark
   prism:
-    enable: false
+    enable: true
     light: prism
     dark: prism-dark
   # Add copy button on codeblock
@@ -557,15 +557,15 @@ math:
   # Default (false) will load mathjax / katex script on demand.
   # That is it only render those page which has `mathjax: true` in front-matter.
   # If you set it to true, it will load mathjax / katex script EVERY PAGE.
-  every_page: true
+  every_page: false
 
   mathjax:
-    enable: false
+    enable: true
     # Available values: none | ams | all
     tags: none
 
   katex:
-    enable: true
+    enable: false
     # See: https://github.com/KaTeX/KaTeX/tree/master/contrib/copy-tex
     copy_tex: true
 

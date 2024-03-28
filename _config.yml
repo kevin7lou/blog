@@ -8,7 +8,7 @@ subtitle: '如鹰展翅上腾（赛 40:31）'
 description: '深度思考，乐于分享'
 keywords:
 author: Kevin Lou
-language: zh-CN
+language: en
 timezone: Asia/Shanghai
 
 # URL
@@ -49,15 +49,15 @@ highlight:
   enable: true
   line_number: true
   auto_detect: false
-  tab_replace: ''
+  tab_replace: '  '
   wrap: true
   hljs: false
 prismjs:
-  enable: false
+  enable: true
   preprocess: true
   line_number: true
-  tab_replace: ''
-  auto_spacing: true    # 在中文和英文之间加入空格
+  tab_replace: '  '
+  # auto_spacing: true    # 在中文和英文之间加入空格
 
 # Home page setting
 # path: Root path for your blogs index page. (default = '')
@@ -126,3 +126,48 @@ feed:
   limit: 20
   hub:
   content:
+
+# Markdown-it config
+# Docs: https://github.com/hexojs/hexo-renderer-markdown-it/wiki
+markdown:
+  preset: "default"
+  render:
+    html: true
+    xhtmlOut: false
+    langPrefix: "language-"
+    breaks: true
+    linkify: true
+    typographer: true
+    quotes: "“”‘’"
+  enable_rules:
+  disable_rules:
+  plugins:
+    # - markdown-it-abbr
+    # - markdown-it-cjk-breaks
+    # - markdown-it-deflist
+    # - markdown-it-emoji
+    # - markdown-it-footnote
+    # - markdown-it-ins
+    - markdown-it-mark
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-checkbox
+    - markdown-it-imsize
+    # - markdown-it-expandable
+    # - name: markdown-it-container
+    #   options: success
+    # - name: markdown-it-container
+    #   options: tips
+    # - name: markdown-it-container
+    #   options: warning
+    # - name: markdown-it-container
+    #   options: danger
+  anchors:
+    level: 2
+    collisionSuffix: ""
+    permalink: false
+    permalinkClass: "header-anchor"
+    permalinkSide: "left"
+    permalinkSymbol: "¶"
+    case: 0
+    separator: "-"
