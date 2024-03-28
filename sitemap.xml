@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://kevin7lou.github.io/tags/index.html</loc>
+    
+    <lastmod>2024-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://kevin7lou.github.io/2023/04/24/AGI-era/</loc>
     
-    <lastmod>2024-03-25</lastmod>
+    <lastmod>2024-03-28</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://kevin7lou.github.io/2024/03/26/Hexo-Next-Github-Page-deploy/</loc>
+    
+    <lastmod>2024-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -13,7 +31,7 @@
   <url>
     <loc>https://kevin7lou.github.io/2022/09/14/my-1st-post/</loc>
     
-    <lastmod>2024-03-25</lastmod>
+    <lastmod>2024-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -22,7 +40,7 @@
   <url>
     <loc>https://kevin7lou.github.io/about/index.html</loc>
     
-    <lastmod>2024-03-25</lastmod>
+    <lastmod>2024-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -31,16 +49,7 @@
   <url>
     <loc>https://kevin7lou.github.io/categories/index.html</loc>
     
-    <lastmod>2024-03-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://kevin7lou.github.io/tags/index.html</loc>
-    
-    <lastmod>2024-03-25</lastmod>
+    <lastmod>2024-03-28</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -49,7 +58,7 @@
 
   <url>
     <loc>https://kevin7lou.github.io/</loc>
-    <lastmod>2024-03-25</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -57,7 +66,14 @@
   
   <url>
     <loc>https://kevin7lou.github.io/tags/AGI/</loc>
-    <lastmod>2024-03-25</lastmod>
+    <lastmod>2024-03-28</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://kevin7lou.github.io/tags/Hexo-Next-theme/</loc>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -66,14 +82,14 @@
   
   <url>
     <loc>https://kevin7lou.github.io/categories/technology/</loc>
-    <lastmod>2024-03-25</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://kevin7lou.github.io/categories/diary/</loc>
-    <lastmod>2024-03-25</lastmod>
+    <lastmod>2024-03-28</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
