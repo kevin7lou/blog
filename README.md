@@ -5,5 +5,5 @@
 Source Code  of My Personal Blog
 - Powered by [Hexo](https://github.com/hexojs/hexo)
 - Deployed by [Github Actions](https://github.com/features/actions)
-- Theme Applied by [hexo-theme-next](https://github.com/theme-next/hexo-theme-next) 
+- Theme Applied by [hexo-theme-next](https://github.com/next-theme/hexo-theme-next) 
 
