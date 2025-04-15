@@ -1,11 +1,11 @@
-https://kevin7lou.github.io/tags/index.html
-https://kevin7lou.github.io/2024/03/26/Hexo-Next-Github-Page-deploy/
 https://kevin7lou.github.io/2023/04/24/AGI-era/
 https://kevin7lou.github.io/2022/09/14/my-1st-post/
+https://kevin7lou.github.io/2024/03/26/Hexo-Next-Github-Page-deploy/
 https://kevin7lou.github.io/about/index.html
 https://kevin7lou.github.io/categories/index.html
+https://kevin7lou.github.io/tags/index.html
 https://kevin7lou.github.io/
-https://kevin7lou.github.io/tags/Hexo-Next-theme/
 https://kevin7lou.github.io/tags/AGI/
+https://kevin7lou.github.io/tags/Hexo-Next-theme/
 https://kevin7lou.github.io/categories/technology/
 https://kevin7lou.github.io/categories/diary/

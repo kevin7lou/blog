@@ -1,20 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>基于Hexo和Next-theme部署Github Page所踩过的坑</title>
-    <url>/2024/03/26/Hexo-Next-Github-Page-deploy/</url>
-    <content><![CDATA[<ul>
-<li>git clone next-theme发布到netflix的时候会出现blank page</li>
-</ul>
-]]></content>
-      <categories>
-        <category>科技洪流</category>
-      </categories>
-      <tags>
-        <tag>Hexo, Next-theme</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>AGI Era</title>
     <url>/2023/04/24/AGI-era/</url>
     <content><![CDATA[<p>22年年底了解到AIGC（AI-Generated Content）这个概念大为震撼！经过近半年的技术演进，很明显，这个赛道已经充斥着各种各样的创业者们。</p>
@@ -81,5 +67,19 @@
       <categories>
         <category>朝花夕拾</category>
       </categories>
+  </entry>
+  <entry>
+    <title>基于Hexo和Next-theme部署Github Page所踩过的坑</title>
+    <url>/2024/03/26/Hexo-Next-Github-Page-deploy/</url>
+    <content><![CDATA[<ul>
+<li>git clone next-theme发布到netflix的时候会出现blank page</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科技洪流</category>
+      </categories>
+      <tags>
+        <tag>Hexo, Next-theme</tag>
+      </tags>
   </entry>
 </search>
