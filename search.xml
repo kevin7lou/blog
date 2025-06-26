@@ -48,20 +48,6 @@
       </tags>
   </entry>
   <entry>
-    <title>基于Hexo和Next-theme部署Github Page所踩过的坑</title>
-    <url>/blog/2024/03/26/Hexo-Next-Github-Page-deploy/</url>
-    <content><![CDATA[<ul>
-<li>git clone next-theme发布到netflix的时候会出现blank page</li>
-</ul>
-]]></content>
-      <categories>
-        <category>科技洪流</category>
-      </categories>
-      <tags>
-        <tag>Hexo, Next-theme</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>这是我的第一篇博客</title>
     <url>/blog/2022/09/14/my-1st-post/</url>
     <content><![CDATA[<h1>重拾“折腾之旅”</h1>
@@ -81,5 +67,19 @@
       <categories>
         <category>朝花夕拾</category>
       </categories>
+  </entry>
+  <entry>
+    <title>基于Hexo和Next-theme部署Github Page所踩过的坑</title>
+    <url>/blog/2024/03/26/Hexo-Next-Github-Page-deploy/</url>
+    <content><![CDATA[<ul>
+<li>git clone next-theme发布到netflix的时候会出现blank page</li>
+</ul>
+]]></content>
+      <categories>
+        <category>科技洪流</category>
+      </categories>
+      <tags>
+        <tag>Hexo, Next-theme</tag>
+      </tags>
   </entry>
 </search>
