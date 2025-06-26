@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>AGI Era</title>
-    <url>/2023/04/24/AGI-era/</url>
+    <url>/blog/2023/04/24/AGI-era/</url>
     <content><![CDATA[<p>22年年底了解到AIGC（AI-Generated Content）这个概念大为震撼！经过近半年的技术演进，很明显，这个赛道已经充斥着各种各样的创业者们。</p>
 <p>截至目前，我对AGI的未来有以下观点和思考。</p>
 <h1>prompt成为人机对话的新接口和界面</h1>
@@ -49,7 +49,7 @@
   </entry>
   <entry>
     <title>基于Hexo和Next-theme部署Github Page所踩过的坑</title>
-    <url>/2024/03/26/Hexo-Next-Github-Page-deploy/</url>
+    <url>/blog/2024/03/26/Hexo-Next-Github-Page-deploy/</url>
     <content><![CDATA[<ul>
 <li>git clone next-theme发布到netflix的时候会出现blank page</li>
 </ul>
@@ -63,7 +63,7 @@
   </entry>
   <entry>
     <title>这是我的第一篇博客</title>
-    <url>/2022/09/14/my-1st-post/</url>
+    <url>/blog/2022/09/14/my-1st-post/</url>
     <content><![CDATA[<h1>重拾“折腾之旅”</h1>
 <p>经历了10x年前的博客大巴、新浪博客、WordPress……如今，重新开始折腾之旅，现在流行Static Blog。在众多框架中，我选择了<span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>以及优雅极简的<span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZy8=">Next<i class="fa fa-external-link-alt"></i></span>主题。</p>
 <p>经过反反复复重装和配置，也伴随着开源框架的不断升级，现在上手的成本越来越低，而且在线教程、生态已经做的很好了。希望这次专注在写作上，不要再折腾了。</p>

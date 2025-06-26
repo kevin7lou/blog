@@ -3,11 +3,11 @@
   <title>Memory Palace</title>
   
   <subtitle>如鹰展翅上腾（赛 40:31）</subtitle>
-  <link href="https://kevin7lou.github.io/atom.xml" rel="self"/>
+  <link href="https://kevin7lou.github.io/blog/atom.xml" rel="self"/>
   
-  <link href="https://kevin7lou.github.io/"/>
-  <updated>2025-04-15T04:58:49.663Z</updated>
-  <id>https://kevin7lou.github.io/</id>
+  <link href="https://kevin7lou.github.io/blog/"/>
+  <updated>2025-06-26T15:11:05.684Z</updated>
+  <id>https://kevin7lou.github.io/blog/</id>
   
   <author>
     <name>Kevin Lou</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>基于Hexo和Next-theme部署Github Page所踩过的坑</title>
-    <link href="https://kevin7lou.github.io/2024/03/26/Hexo-Next-Github-Page-deploy/"/>
-    <id>https://kevin7lou.github.io/2024/03/26/Hexo-Next-Github-Page-deploy/</id>
+    <link href="https://kevin7lou.github.io/blog/2024/03/26/Hexo-Next-Github-Page-deploy/"/>
+    <id>https://kevin7lou.github.io/blog/2024/03/26/Hexo-Next-Github-Page-deploy/</id>
     <published>2024-03-26T15:06:17.000Z</published>
-    <updated>2025-04-15T04:58:49.663Z</updated>
+    <updated>2025-06-26T15:11:05.684Z</updated>
     
     
       
@@ -34,19 +34,19 @@
     
     
     
-    <category term="科技洪流" scheme="https://kevin7lou.github.io/categories/technology/"/>
+    <category term="科技洪流" scheme="https://kevin7lou.github.io/blog/categories/technology/"/>
     
     
-    <category term="Hexo, Next-theme" scheme="https://kevin7lou.github.io/tags/Hexo-Next-theme/"/>
+    <category term="Hexo, Next-theme" scheme="https://kevin7lou.github.io/blog/tags/Hexo-Next-theme/"/>
     
   </entry>
   
   <entry>
     <title>AGI Era</title>
-    <link href="https://kevin7lou.github.io/2023/04/24/AGI-era/"/>
-    <id>https://kevin7lou.github.io/2023/04/24/AGI-era/</id>
+    <link href="https://kevin7lou.github.io/blog/2023/04/24/AGI-era/"/>
+    <id>https://kevin7lou.github.io/blog/2023/04/24/AGI-era/</id>
     <published>2023-04-24T13:32:17.000Z</published>
-    <updated>2025-04-15T04:58:49.662Z</updated>
+    <updated>2025-06-26T15:11:05.684Z</updated>
     
     
     <summary type="html">&lt;p&gt;22年年底了解到AIGC（AI-Generated Content）这个概念大为震撼！经过近半年的技术演进，很明显，这个赛道已经充斥着各种各样的创业者们。&lt;/p&gt;
@@ -62,19 +62,19 @@
     
     
     
-    <category term="科技洪流" scheme="https://kevin7lou.github.io/categories/technology/"/>
+    <category term="科技洪流" scheme="https://kevin7lou.github.io/blog/categories/technology/"/>
     
     
-    <category term="AGI" scheme="https://kevin7lou.github.io/tags/AGI/"/>
+    <category term="AGI" scheme="https://kevin7lou.github.io/blog/tags/AGI/"/>
     
   </entry>
   
   <entry>
     <title>这是我的第一篇博客</title>
-    <link href="https://kevin7lou.github.io/2022/09/14/my-1st-post/"/>
-    <id>https://kevin7lou.github.io/2022/09/14/my-1st-post/</id>
+    <link href="https://kevin7lou.github.io/blog/2022/09/14/my-1st-post/"/>
+    <id>https://kevin7lou.github.io/blog/2022/09/14/my-1st-post/</id>
     <published>2022-09-13T17:33:17.000Z</published>
-    <updated>2025-04-15T04:58:49.663Z</updated>
+    <updated>2025-06-26T15:11:05.684Z</updated>
     
     
     <summary type="html">&lt;h1&gt;重拾“折腾之旅”&lt;/h1&gt;
@@ -83,7 +83,7 @@
     
     
     
-    <category term="朝花夕拾" scheme="https://kevin7lou.github.io/categories/diary/"/>
+    <category term="朝花夕拾" scheme="https://kevin7lou.github.io/blog/categories/diary/"/>
     
     
   </entry>
