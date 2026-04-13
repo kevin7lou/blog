@@ -1,0 +1,35 @@
+---
+interface Props {
+  class?: string;
+}
+
+const { class: className } = Astro.props;
+
+const rewards = [
+  { name: "WeChat Pay", image: "/images/wechatpay.png" },
+  { name: "Alipay", image: "/images/alipay.png" },
+  { name: "PayPal", image: "/images/paypal.png" },
+  { name: "Bitcoin", image: "/images/bitcoin.png" },
+];
+---
+
+<details class:list={["group", className]}>
+  <summary class="cursor-pointer list-none text-center">
+    <span class="inline-block rounded-lg border border-accent/30 px-4 py-2 text-sm text-accent hover:bg-accent/10 transition-colors">
+      ☕ 请我喝杯咖啡
+    </span>
+  </summary>
+  <div class="mt-4 grid grid-cols-2 gap-4 sm:grid-cols-4">
+    {rewards.map(({ name, image }) => (
+      <div class="flex flex-col items-center gap-2">
+        <img
+          src={image}
+          alt={name}
+          class="h-32 w-32 rounded-lg border border-border object-contain"
+          loading="lazy"
+        />
+        <span class="text-xs text-foreground/60">{name}</span>
+      </div>
+    ))}
+  </div>
+</details>

@@ -1,0 +1,23 @@
+export const SITE = {
+  website: "https://kevin7lou.github.io/blog",
+  author: "Kevin Lou",
+  profile: "https://github.com/kevin7lou",
+  desc: "深度思考，乐于分享",
+  title: "Memory Palace",
+  ogImage: "og-default.png",
+  lightAndDarkMode: true,
+  postPerIndex: 4,
+  postPerPage: 10,
+  scheduledPostMargin: 15 * 60 * 1000,
+  showArchives: true,
+  showBackButton: true,
+  editPost: {
+    enabled: false,
+    text: "Edit page",
+    url: "",
+  },
+  dynamicOgImage: true,
+  dir: "ltr",
+  lang: "zh-CN",
+  timezone: "Asia/Shanghai",
+} as const;
