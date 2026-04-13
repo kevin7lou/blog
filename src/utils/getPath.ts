@@ -1,5 +1,6 @@
 import { BLOG_PATH } from "@/content.config";
 import { slugifyStr } from "./slugify";
+import { withBase } from "./getUrl";
 
 /**
  * Get full path of a blog post
@@ -33,4 +34,12 @@ export function getPath(
   }
 
   return [basePath, ...pathSegments, slug].join("/");
+}
+
+export function getLinkPath(
+  id: string,
+  filePath: string | undefined,
+  includeBase = true
+) {
+  return withBase(getPath(id, filePath, includeBase));
 }

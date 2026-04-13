@@ -1,4 +1,6 @@
 ---
+import { withBase } from "@/utils/getUrl";
+
 interface Props {
   class?: string;
 }
@@ -6,10 +8,10 @@ interface Props {
 const { class: className } = Astro.props;
 
 const rewards = [
-  { name: "WeChat Pay", image: "/images/wechatpay.png" },
-  { name: "Alipay", image: "/images/alipay.png" },
-  { name: "PayPal", image: "/images/paypal.png" },
-  { name: "Bitcoin", image: "/images/bitcoin.png" },
+  { name: "WeChat Pay", image: withBase("/images/wechatpay.png") },
+  { name: "Alipay", image: withBase("/images/alipay.png") },
+  { name: "PayPal", image: withBase("/images/paypal.png") },
+  { name: "Bitcoin", image: withBase("/images/bitcoin.png") },
 ];
 ---
 

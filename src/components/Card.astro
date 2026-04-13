@@ -1,7 +1,7 @@
 ---
 import type { CollectionEntry } from "astro:content";
 import { slugifyStr } from "@/utils/slugify";
-import { getPath } from "@/utils/getPath";
+import { getLinkPath } from "@/utils/getPath";
 import Datetime from "./Datetime.astro";
 
 type Props = {
@@ -15,7 +15,7 @@ const { title, description, ...props } = data;
 
 <li class="my-6">
   <a
-    href={getPath(id, filePath)}
+    href={getLinkPath(id, filePath)}
     class:list={[
       "inline-block text-lg font-medium text-accent",
       "decoration-dashed underline-offset-4 hover:underline",

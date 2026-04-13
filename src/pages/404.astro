@@ -5,6 +5,7 @@ import Footer from "@/components/Footer.astro";
 import LinkButton from "@/components/LinkButton.astro";
 import { SITE } from "@/config";
 import { t } from "@/i18n/utils";
+import { withBase } from "@/utils/getUrl";
 ---
 
 <Layout title={`404 Not Found | ${SITE.title}`}>
@@ -20,7 +21,7 @@ import { t } from "@/i18n/utils";
       <p class="mt-4 text-2xl sm:text-3xl">{t("error.notFound")}</p>
       <p class="mt-2 text-foreground/60">{t("error.notFoundDesc")}</p>
       <LinkButton
-        href="/"
+        href={withBase("/")}
         class="my-6 text-lg underline decoration-dashed underline-offset-8"
       >
         {t("error.goHome")}

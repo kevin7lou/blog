@@ -8,12 +8,15 @@ import IconMenuDeep from "@/assets/icons/IconMenuDeep.svg";
 import LinkButton from "./LinkButton.astro";
 import { SITE } from "@/config";
 import { t } from "@/i18n/utils";
+import { stripBase, withBase } from "@/utils/getUrl";
 
 const { pathname } = Astro.url;
 
 // Remove trailing slash from current pathname if exists
 const currentPath =
-  pathname.endsWith("/") && pathname !== "/" ? pathname.slice(0, -1) : pathname;
+  stripBase(pathname).endsWith("/") && stripBase(pathname) !== "/"
+    ? stripBase(pathname).slice(0, -1)
+    : stripBase(pathname);
 
 const isActive = (path: string) => {
   const currentPathArray = currentPath.split("/").filter(p => p.trim());
@@ -44,7 +47,7 @@ const isActive = (path: string) => {
     ]}
   >
     <a
-      href="/"
+      href={withBase("/")}
       class="absolute py-1 text-xl leading-8 font-semibold whitespace-nowrap sm:static sm:my-auto sm:text-2xl sm:leading-none"
     >
       {SITE.title}
@@ -73,17 +76,17 @@ const isActive = (path: string) => {
         ]}
       >
         <li class="col-span-2">
-          <a href="/posts" class:list={{ "active-nav": isActive("/posts") }}>
+          <a href={withBase("/posts")} class:list={{ "active-nav": isActive("/posts") }}>
             {t("nav.posts")}
           </a>
         </li>
         <li class="col-span-2">
-          <a href="/tags" class:list={{ "active-nav": isActive("/tags") }}>
+          <a href={withBase("/tags")} class:list={{ "active-nav": isActive("/tags") }}>
             {t("nav.tags")}
           </a>
         </li>
         <li class="col-span-2">
-          <a href="/about" class:list={{ "active-nav": isActive("/about") }}>
+          <a href={withBase("/about")} class:list={{ "active-nav": isActive("/about") }}>
             {t("nav.about")}
           </a>
         </li>
@@ -91,7 +94,7 @@ const isActive = (path: string) => {
           SITE.showArchives && (
             <li class="col-span-2">
               <LinkButton
-                href="/archives"
+                href={withBase("/archives")}
                 class:list={[
                   "focus-outline flex justify-center p-3 sm:p-1",
                   {
@@ -109,7 +112,7 @@ const isActive = (path: string) => {
         }
         <li class="col-span-1 flex items-center justify-center">
           <LinkButton
-            href="/search"
+            href={withBase("/search")}
             class:list={[
               "focus-outline flex p-3 sm:p-1",
               { "[&>svg]:stroke-accent": isActive("/search") },

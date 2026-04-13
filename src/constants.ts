@@ -7,6 +7,7 @@ import IconRss from "@/assets/icons/IconRss.svg";
 import IconTelegram from "@/assets/icons/IconTelegram.svg";
 import IconMail from "@/assets/icons/IconMail.svg";
 import { SITE } from "@/config";
+import { withBase } from "@/utils/getUrl";
 
 interface Social {
   name: string;
@@ -42,7 +43,7 @@ export const SOCIALS: Social[] = [
   },
   {
     name: "RSS",
-    href: "/rss.xml",
+    href: withBase("/rss.xml"),
     linkTitle: `${SITE.title} RSS Feed`,
     icon: IconRss,
   },

@@ -12,24 +12,31 @@ import IconArrowRight from "@/assets/icons/IconArrowRight.svg";
 import { SITE } from "@/config";
 import { SOCIALS } from "@/constants";
 import { t } from "@/i18n/utils";
+import { withBase } from "@/utils/getUrl";
 
 const posts = await getCollection("blog");
 
 const sortedPosts = getSortedPosts(posts);
 const featuredPosts = sortedPosts.filter(({ data }) => data.featured);
 const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
+const homeUrl = withBase("/");
 ---
 
 <Layout>
   <Header />
-  <main id="main-content" data-layout="index" class="app-layout">
+  <main
+    id="main-content"
+    data-layout="index"
+    data-home-url={homeUrl}
+    class="app-layout"
+  >
     <section id="hero" class:list={["pt-8 pb-6", "border-b border-border"]}>
       <h1 class="my-4 inline-block text-4xl font-bold sm:my-8 sm:text-5xl">
         Mingalaba
       </h1>
       <a
         target="_blank"
-        href="/rss.xml"
+        href={withBase("/rss.xml")}
         class="inline-block"
         aria-label="rss feed"
         title="RSS Feed"
@@ -90,7 +97,7 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
     }
 
     <div class="my-8 text-center">
-      <LinkButton href="/posts/">
+      <LinkButton href={withBase("/posts/")}>
         {t("index.allPosts")}
         <IconArrowRight class="inline-block rtl:-rotate-180" />
       </LinkButton>
@@ -101,10 +108,12 @@ const recentPosts = sortedPosts.filter(({ data }) => !data.featured);
 
 <script>
   document.addEventListener("astro:page-load", () => {
-    const indexLayout = (document.querySelector("#main-content") as HTMLElement)
-      ?.dataset?.layout;
-    if (indexLayout) {
-      sessionStorage.setItem("backUrl", "/");
+    const mainContent = document.querySelector("#main-content") as HTMLElement | null;
+    const indexLayout = mainContent?.dataset?.layout;
+    const homeUrl = mainContent?.dataset?.homeUrl;
+
+    if (indexLayout && homeUrl) {
+      sessionStorage.setItem("backUrl", homeUrl);
     }
   });
 </script>
