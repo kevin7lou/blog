@@ -1,0 +1,89 @@
+---
+import { t } from "@/i18n/utils";
+
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+const filteredHeadings = headings.filter(h => h.depth >= 2 && h.depth <= 4);
+---
+
+{filteredHeadings.length > 0 && (
+  <nav class="toc-sidebar">
+    {/* Mobile: collapsible */}
+    <details class="lg:hidden mb-6">
+      <summary class="cursor-pointer font-medium text-accent">
+        {t("post.toc")}
+      </summary>
+      <ul class="mt-2 space-y-1 text-sm">
+        {filteredHeadings.map(heading => (
+          <li style={`padding-left: ${(heading.depth - 2) * 0.75}rem`}>
+            <a href={`#${heading.slug}`} class="text-foreground/70 hover:text-accent">
+              {heading.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </details>
+
+    {/* Desktop: sticky sidebar */}
+    <div class="hidden lg:block sticky top-20 max-h-[calc(100vh-6rem)] overflow-y-auto">
+      <h2 class="mb-3 text-sm font-semibold uppercase tracking-wide text-foreground/50">
+        {t("post.toc")}
+      </h2>
+      <ul class="space-y-1.5 text-sm border-l border-border pl-3">
+        {filteredHeadings.map(heading => (
+          <li style={`padding-left: ${(heading.depth - 2) * 0.75}rem`}>
+            <a
+              href={`#${heading.slug}`}
+              class="toc-link block text-foreground/60 hover:text-accent transition-colors"
+              data-slug={heading.slug}
+            >
+              {heading.text}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </nav>
+)}
+
+<script>
+  function initTOC() {
+    const tocLinks = document.querySelectorAll<HTMLAnchorElement>(".toc-link");
+    if (tocLinks.length === 0) return;
+
+    const observer = new IntersectionObserver(
+      entries => {
+        for (const entry of entries) {
+          if (entry.isIntersecting) {
+            tocLinks.forEach(link => link.classList.remove("text-accent", "font-medium"));
+            const activeLink = document.querySelector(
+              `.toc-link[data-slug="${entry.target.id}"]`
+            );
+            activeLink?.classList.add("text-accent", "font-medium");
+          }
+        }
+      },
+      { rootMargin: "0px 0px -80% 0px", threshold: 0 }
+    );
+
+    tocLinks.forEach(link => {
+      const slug = link.dataset.slug;
+      if (slug) {
+        const heading = document.getElementById(slug);
+        if (heading) observer.observe(heading);
+      }
+    });
+  }
+
+  initTOC();
+  document.addEventListener("astro:after-swap", initTOC);
+</script>

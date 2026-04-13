@@ -13,6 +13,7 @@ import { getPath } from "@/utils/getPath";
 import { slugifyStr } from "@/utils/slugify";
 import IconChevronLeft from "@/assets/icons/IconChevronLeft.svg";
 import IconChevronRight from "@/assets/icons/IconChevronRight.svg";
+import TOC from "@/components/TOC.astro";
 import { SITE } from "@/config";
 import { t } from "@/i18n/utils";
 
@@ -36,7 +37,7 @@ const {
   hideEditPost,
 } = post.data;
 
-const { Content } = await render(post);
+const { Content, headings } = await render(post);
 
 let ogImageUrl: string | undefined;
 
@@ -108,12 +109,20 @@ const nextPost =
       >
       <EditPost {hideEditPost} {post} class="max-sm:hidden" />
     </div>
-    <article
-      id="article"
-      class="app-prose mt-8 w-full max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
-    >
-      <Content />
-    </article>
+    <div class="lg:hidden">
+      <TOC headings={headings} />
+    </div>
+    <div class="lg:grid lg:grid-cols-[1fr_200px] lg:gap-8">
+      <article
+        id="article"
+        class="app-prose mt-8 w-full max-w-app prose-pre:bg-(--shiki-light-bg) dark:prose-pre:bg-(--shiki-dark-bg)"
+      >
+        <Content />
+      </article>
+      <aside class="hidden lg:block mt-8" data-pagefind-ignore>
+        <TOC headings={headings} />
+      </aside>
+    </div>
 
     <hr class="my-8 border-dashed" />
 
