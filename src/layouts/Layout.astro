@@ -187,6 +187,19 @@ const structuredData = {
     <!-- Load full theme logic -->
     <script src="../scripts/theme.ts"></script>
 
+    <!-- CJK typography: auto-space between CJK and Latin characters -->
+    <script is:inline>
+      (async function() {
+        const script = document.createElement("script");
+        script.src = "https://cdn.jsdelivr.net/npm/pangu@4/dist/browser/pangu.min.js";
+        script.onload = function() { if (window.pangu) window.pangu.autoSpacingPage(); };
+        document.head.appendChild(script);
+      })();
+      document.addEventListener("astro:after-swap", function() {
+        if (window.pangu) window.pangu.autoSpacingPage();
+      });
+    </script>
+
     <!-- Mermaid diagram support -->
     <script is:inline>
       async function initMermaid() {
