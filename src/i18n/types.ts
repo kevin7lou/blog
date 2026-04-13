@@ -1,0 +1,34 @@
+export interface I18nStrings {
+  "nav.skipToContent": string;
+  "nav.posts": string;
+  "nav.tags": string;
+  "nav.about": string;
+  "nav.archives": string;
+  "nav.search": string;
+  "nav.toggleTheme": string;
+  "nav.openMenu": string;
+  "nav.closeMenu": string;
+  "post.prevPost": string;
+  "post.nextPost": string;
+  "post.share": string;
+  "post.copy": string;
+  "post.copied": string;
+  "post.toc": string;
+  "post.goBack": string;
+  "pagination.prev": string;
+  "pagination.next": string;
+  "pagination.nav": string;
+  "pagination.gotoPrev": string;
+  "pagination.gotoNext": string;
+  "breadcrumb.home": string;
+  "search.title": string;
+  "search.desc": string;
+  "index.featured": string;
+  "index.recentPosts": string;
+  "index.allPosts": string;
+  "error.notFound": string;
+  "error.notFoundDesc": string;
+  "error.goHome": string;
+  "footer.copyright": string;
+  "footer.allRightsReserved": string;
+}
