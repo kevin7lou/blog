@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://kevin7lou.github.io/sitemap-index.xml
