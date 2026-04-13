@@ -177,7 +177,7 @@ const structuredData = {
     <script src="../scripts/theme.ts"></script>
 
     <!-- Mermaid diagram support -->
-    <script>
+    <script is:inline>
       async function initMermaid() {
         const mermaidBlocks = document.querySelectorAll("pre > code.language-mermaid");
         if (mermaidBlocks.length === 0) return;
